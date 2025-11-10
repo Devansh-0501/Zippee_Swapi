@@ -1,16 +1,41 @@
-# React + Vite
+🔐 Login Credentials
+Username: admin  
+Password: password
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+✨ Features
 
-Currently, two official plugins are available:
+🔍 Search by character name (partial match)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+🎛️ Filters — by homeworld, film, or species
 
-## React Compiler
+🔄 Combined Search + Filter support
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+📄 Pagination — navigate through characters via SWAPI pages
 
-## Expanding the ESLint configuration
+🔑 Mock Authentication — fake JWT token & silent refresh every 5s
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+🪐 Character Modal — shows name, height, mass, birth year, and homeworld details
+
+⚡ Responsive UI — CSS Grid + Flexbox layout
+
+⚙️ Tech Stack
+
+React (Vite)
+
+Vanilla CSS
+
+SWAPI API
+
+LocalStorage (for mock JWT)
+
+React Testing Library (for integration test example)
+
+🧠 Design Notes
+
+Used client-side search & filter for simplicity.
+
+Used Picsum Photos for random character images.
+
+Mocked JWT system simulates login + silent token refresh.
+
+Modal fetches character + homeworld data separately for realism.
